@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+/*Classes Axiliáres*/
+
+.clear{clear:both}
+.container{max-width:960px;padding:0 2%;margin:0 auto;}
+
+/****/
+
+/*Estlos Site*/
+
+
+/*Sessão 1*/
+
+section.header-master{
+    width: 100%;
+    padding: 30px 0;
+    min-height: 700px;
+    background-image: url('../images/bg_01.png');
+    background-size: cover;
+}
+
+section.header-master header{
+    border-bottom: 2px solid rgba(71,83,88,0.14);
+    padding-bottom: 20px;
+}
+
+div.logo{
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url('../images/logo.png');
+    background-size: 100% 100%;
+}
+
+header nav{
+    float: left;
+    padding-left: 60px;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header li{
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+}
+
+li.selected{
+    color: #509d87;
+    position: relative;
+}
+
+li.selected > span{
+    position: absolute;
+    bottom: -2px;
+    width: 17px;
+    height: 2px;
+    background: #509d87;
+}
+
+header li > a{
+    color: inherit;
+    text-decoration: none;
+}
+
+div.telefone-header{
+    position: relative;
+    top: -3px;
+    float: left;
+}
+
+div.telefone-header span{
+    font-size: 22px;
+    color: white;
+    padding-left: 30px;
+}
+
+.content-header{
+    padding: 60px 0;
+}
+
+.content-header .one{
+    float: left;
+    width: 50%;
+}
+
+.content-header .one h2{
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+
+.content-header .one p,
+.content-header .one span{
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.content-header .one form input{
+    display: inline-block;
+}
+
+.content-header .one form input[type=email]{
+    width: 251px;
+    height: 45px;
+    border: 3px solid #ccc;
+    border-radius: 130px;
+    padding-left: 15px;  
+    margin: 10px 0; 
+}
+
+.content-header .one form input[type=email]:focus{
+    outline: 0;
+}
+
+.content-header .one form input[type=submit]{
+    background-color: #00daaa;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.content-header .one span{
+    color: #509d87;
+    font-size: 13px;
+    margin-top: 20px;
+    display: block;
+}
+
+.content-header .two{
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.content-header .two img{
+    float: left;
+    width: 50%;
+    border: 15px solid rgba(0,0,0,0);
+}
+
+/****/
+
+/****/
+
+/*Media Screen*/
+
+@media screen and (max-width: 900px){
+    .content-header .one{
+        text-align: center;
+        width: 100%;
+    }
+    .content-header .two{
+        display: none;
+    }
+
+    .telefone-header{
+        display: none;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    section.header-master{
+        min-height: 400px;
+    }
+}
+
+/*****/
