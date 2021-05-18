@@ -227,6 +227,29 @@ section.diferenciais > .container{
 
 /****/
 
+/*Sessão Depoimentos*/
+
+section.depoimento{
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    color: #2d2d2d;
+    background-image: url('../images/bg_02.png');
+    background-size: cover; 
+    text-align: center;
+}
+
+.section.depoimento h2{
+    font-weight: normal;
+    font-size: 29px;
+}
+
+.section-depoimento p{
+    font-size: 15px;
+}
+
+/****/
+
 /*Media Screen*/
 
 @media screen and (max-width: 900px){
